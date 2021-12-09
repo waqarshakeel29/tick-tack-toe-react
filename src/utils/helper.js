@@ -1,10 +1,12 @@
 
 
 const generateRandom = (min, max) => {
+    console.log("generaRandom")
     return Math.round(min + Math.random() * (max - min)) + max
 }
 
 const generateArray = (rows, columns) => {
+    console.log("generaArray")
     var array = []
     for (let row = 0; row < rows; row++) {
         array.push([])

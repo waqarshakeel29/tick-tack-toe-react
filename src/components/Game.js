@@ -14,9 +14,19 @@ const Game = () => {
 
 
     // Define State Variables
-    const [turn, setTurn] = useState(generateRandom(0, 1))
+
+    //Run only first time due to syntax
+    const [turn, setTurn] = useState(() => {
+        return generateRandom(0, 1)
+    })
+
+    // Run only first time due to syntax
+    const [board, setBoard] = useState(() => {
+        return generateArray(state.gridSize,state.gridSize)
+    })
+
     const [winner, setWinner] = useState("")
-    const [board, setBoard] = useState(generateArray(state.gridSize,state.gridSize))
+
 
 
     // Get Player Name
