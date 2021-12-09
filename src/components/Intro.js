@@ -21,13 +21,14 @@ const Intro = () => {
 
     return (
         <div className="container">
+            <h1>Tick Tack Toe</h1>
             <form className="add-form" onSubmit={onSubmit}>
             <div className="form-control">
                 <label>Player 1</label>
                 <input type="text" placeholder="Name" value={playerOne} onChange={(e) => setPlayerOne(e.target.value)} />
                 <label>Player 2</label>
                 <input type="text" placeholder="Name" value={playerTwo} onChange={(e) => setPlayerTwo(e.target.value)} />
-                <label>Player 2</label>
+                <label>Grid Size</label>
                 <input type="number" placeholder="Grid Size" value={gridSize} onChange={(e) => setGridSize(e.target.value)} />
 
                 <label>Instructions</label>

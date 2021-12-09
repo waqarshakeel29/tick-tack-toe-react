@@ -1,21 +1,21 @@
 import React, { useEffect, useState } from 'react'
 
-const Square = ({index,value,onClick}) => {
-    const [mark,setMark] = useState(0)
-    
+const Square = ({ index, value, onClick }) => {
+    const [mark, setMark] = useState(0)
+
 
     const onPlaceMark = (e) => {
         e.preventDefault()
 
-        if(mark === 0){
+        if (mark === 0) {
             setMark(value)
-            onClick({index})
+            onClick({ index })
         }
     }
 
     useEffect(() => {
-        if(mark === 0){
-        setMark(value)
+        if (mark === 0) {
+            setMark(value)
         }
     })
 
